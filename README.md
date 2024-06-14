@@ -1,1 +1,1 @@
-This repository contains various task programs that I have programmed using Go. 
+This repository contains multiple task programs that I have programmed using Go. 
