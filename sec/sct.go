@@ -17,14 +17,16 @@ func checkPasswordHash(password, hash string) bool {
     return err == nil
 }
 
-
 func main() {
-    password := "mySecurePassword"
+    var password string
+    fmt.Print("Enter a password: ")
+    fmt.Scan(&password)
+
     hash, err := hashPassword(password)
     if err != nil {
         fmt.Println("Error hashing password:", err)
         return
-	}
+    }
 
     fmt.Println("Password:", password)
     fmt.Println("Hash:    ", hash)
